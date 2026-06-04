@@ -1,0 +1,38 @@
+DOCUMENTO EXPLICATIVO DEL PROYECTO WEB - GUÍA DE ELDEN RING
+
+● NOMBRE Y APELLIDOS:
+Álvaro Gutiérrez Peña
+
+● USO DE JAVASCRIPT EN EL SITIO:
+En mi sitio web he utilizado JavaScript para convertir la guía en una aplicación de una sola página para que pueda ser dinámica e interactiva con una función propia llamada "muestra" en la cabecera del documento. Esta función se activa cuando el usuario hace clic tanto en las imágenes del menú visual de inicio como en los enlaces del menú lateral de navegación. 
+
+La lógica del código JS se encarga de automatizar lo siguiente:
+
+1. Utiliza "document.getElementsByClassName('articulo')" para buscar todos los bloques de contenido de la guía mediante un bucle "for".
+
+2. Limpia el estado de la pantalla eliminando la clase CSS "visible" y añadiendo la clase "oculto" a todos los bloques.
+
+3. Utiliza "document.getElementById(capa)" para localizar de forma precisa la sección que el usuario ha solicitado (ya sea "historia", "jefes", "clases", "galería" o "contacto") para quitarle la clase "oculto" y añadirle la clase "visible".
+
+Gracias a este script, el usuario puede explorar toda la información sobre la historia, los jefes o la tabla de atributos sin sufrir tiempos de carga ni refrescos de página, logrando una navegación instantánea y fluida.
+
+● CÓDIGO CSS/JS :
+El proyecto cuenta con varios desarrollos un poco avanzados:
+
+1. Control dinámico del DOM: Mi script de JavaScript interactúa de forma limpia con "style_index.css" alternando dinámicamente entre las clases ".articulo.oculto" y ".articulo.visible".
+
+2. Grid fluido y reordenación avanzada: Utilizo el sistema de rejilla flexbox para adaptar componentes complejos de forma responsive. Por ejemplo, las tarjetas de los jefes pasan automáticamente de 1 columna en móviles a 2 columnas en ordenadores. Además, uso clases de ordenamiento avanzado como "last-xs first-sm" para posicionar el menú de navegación arriba en dispositivos móviles (mejorando la usabilidad) y moverlo al lateral derecho en pantallas grandes.
+
+3. Adaptabilidad en elementos complejos: He diseñado un contenedor específico para desbordamiento llamado ".tabla-contenedor" que envuelve la tabla de atributos. Al aplicarle 'overflow-x: auto', la tabla se puede leer perfectamente en pantallas táctiles mediante scroll horizontal sin romper el diseño de la web. De igual forma, el formulario escala todos sus "input" y "textarea" al 100% del ancho disponible para optimizar la interfaz móvil.
+
+● USO DE FRAMEWORKS:
+He integrado y utilizado el framework "Flexbox Grid" 
+
+● VALIDACIÓN HTML Y CSS DE LA W3C:
+Sí, he verificado la pagina web con W3C. El único "error" que no puedo corregir es que en la línea 37 y 390 tengo un "section" en lugar de un "div", pero realmente no esta mal ya que el "section" cumple con su función, y si se llega a modificar, puede cambiar la pagina.
+
+●COSAS QUE HAS HECHO BIEN/MAL
+
+LO QUE HAS HECHO BIEN: Has estado interesada en que aprendamos en lugar de simplemente mandar tareas, le dedicas tu tiempo a cada alumno que necesite ayuda o posee alguna duda y las clases fueron dinámicas y entretenidas, probando cada cosa nueva  que aprendíamos.
+
+LO QUE HAS HECHO MAL: Desde mi punto de vista, no considero que haya hago que hayas echo mal como tal, puede que como mucho es que estuvieras mucho tiempo con una misma actividad (cosa que es comprensible ya que a veces no es tan fácil aprender algo nuevo tan rápido).
