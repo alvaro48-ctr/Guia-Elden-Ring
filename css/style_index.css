@@ -1,0 +1,284 @@
+/* URL de fuentes */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Lora:ital,wght@0,400..700;1,400..700&family=Metamorphous&display=swap');
+
+body {
+    background-color: #0c0c0c;
+    /* Fondo con un degradado radial para simular iluminación de antorcha */
+    background-image: radial-gradient(circle at center, #1a1a1a 0%, #050505 100%);
+    font-family: 'Lora', serif;
+    color: #c9ad6a;
+    margin: 0;
+    line-height: 1.6;
+}
+
+/* El !important sirve para anular estilos por defecto */
+.container {
+    max-width: 95% !important; /* Estira la web hacia los lados */
+    width: 1450px !important;  /* Le da un ancho máximo amplio y elegante */
+    margin: 0 auto;            /* La mantiene perfectamente centrada en la pantalla */
+}
+
+.oculto { display: none; } 
+.visible { display: block; } 
+
+/* HEADER: Ahora con un efecto de "metal grabado" */
+header {
+    background-color: rgba(20, 20, 20, 0.95);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.8), inset 0 0 15px rgba(201, 173, 106, 0.1);
+    border: 1px solid #c9ad6a;
+    border-radius: 2px; 
+    text-align: center;
+    padding: 30px;
+    margin-bottom: 25px;
+}
+
+header h1 {
+    font-family: 'Cinzel', serif;
+    font-size: 3rem;
+    letter-spacing: 10px;
+    text-shadow: 0 0 10px rgba(201, 173, 106, 0.5);
+    margin: 0;
+}
+
+/* ARTÍCULOS: Efecto de pergamino oscuro o piedra */
+section .articulo {
+    background-color: rgba(25, 25, 25, 0.9);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.7);
+    border: 1px solid #333;
+    border-left: 4px solid #c9ad6a; /* Detalle elegante en el lateral */
+    padding: 30px;
+    margin-top: 10px;
+    transition: transform 0.4s ease;
+}
+
+section .articulo h1 {
+    background: linear-gradient(90deg, rgba(201,173,106,0) 0%, rgba(201,173,106,0.2) 50%, rgba(201,173,106,0) 100%);
+    color: #e0e0e0;
+    font-family: 'Cinzel', serif;
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid #c9ad6a;
+}
+
+/* IMÁGENES: Con marco de "cuadro antiguo" */
+section .articulo img {
+    display: block;
+    width: 85%;
+    max-width: 650px;
+    margin: 20px auto;
+    border: 3px solid #1a1a1a;
+    outline: 1px solid #c9ad6a; /* Doble borde dorado */
+    box-shadow: 0 0 25px rgba(0,0,0,0.8);
+}
+
+
+/* Boton volver: Estilo cinematico */
+.btn-volver {
+    background-color: transparent;
+    color: #c9ad6a;
+    border: 1px solid #c9ad6a;
+    padding: 10px 30px;
+    font-family: 'Cinzel', serif;
+    font-weight: bold;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: 0.4s;
+    margin: 20px 0;
+}
+
+.btn-volver:hover {
+    background-color: #c9ad6a;
+    color: #000;
+    box-shadow: 0 0 20px rgba(201, 173, 106, 0.6);
+}
+
+/* Tabla de historia y clases */
+table {
+    border: 1px solid #c9ad6a;
+    background: rgba(0,0,0,0.5);
+    margin-top: 20px;
+}
+
+th { color: #fff; border-bottom: 1px solid #c9ad6a; }
+td { border-bottom: 1px solid #333; }
+
+/* FOOTER */
+.footer {
+    border-top: 1px solid #333;
+    color: #555;
+    padding: 20px;
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+}
+
+/* ANIMACIÓN DE FUNDIDO */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.articulo.visible {
+    display: block;
+    animation: fadeIn 0.6s ease forwards; /* Para que el contenido aparezca suavemente */
+}
+
+/* ESTILOS DE LA TABLA MANDATORIA */
+.tabla-contenedor {
+    overflow-x: auto; /* Hace la tabla responsive en moviles */
+    margin: 25px 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: rgba(15, 15, 15, 0.8);
+    border: 1px solid #c9ad6a;
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #333;
+}
+
+th {
+    background-color: rgba(201, 173, 106, 0.2);
+    color: #fff;
+    font-family: 'Cinzel', serif;
+}
+
+tr:hover {
+    background-color: rgba(201, 173, 106, 0.05); /* Efecto interactivo en la fila */
+}
+
+/* Estilos para el formulario de Elden */
+.formulario-elden {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-family: 'Cinzel', serif;
+    font-size: 0.95rem;
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    background-color: #111;
+    border: 1px solid #444;
+    color: #e0e0e0;
+    font-family: 'Lora', serif;
+    box-sizing: border-box;
+}
+
+.form-group input:focus, .form-group textarea:focus {
+    border-color: #c9ad6a;
+    outline: none;
+    box-shadow: 0 0 8px rgba(201, 173, 106, 0.4);
+}
+
+/* GALERÍA DE IMÁGENES */
+.galeria-item {
+    width: 100% !important;
+    height: 180px !important;
+    object-fit: cover;
+    margin: 10px 0 !important;
+    cursor: pointer;
+    transition: transform 0.3s, outline-color 0.3s;
+}
+
+.galeria-item:hover {
+    transform: scale(1.05);
+    outline: 1px solid #c9ad6a;
+}
+
+/* Diseño grid para la sección de jefes */
+.jefe-caja {
+    padding: 10px; 
+    display: flex;
+}
+
+.jefe-tarjeta {
+    background-color: rgba(15, 15, 15, 0.7);
+    border: 1px solid #333;
+    border-bottom: 3px solid #c9ad6a; 
+    padding: 20px;
+    border-radius: 4px;
+    width: 100%;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Mantiene los botones e imágenes alineados */
+}
+
+.jefe-tarjeta h2 {
+    font-family: 'Cinzel', serif;
+    color: #e0e0e0;
+    font-size: 1.3rem;
+    margin-top: 0;
+    letter-spacing: 1px;
+    border-bottom: 1px solid rgba(201, 173, 106, 0.3);
+    padding-bottom: 5px;
+}
+
+.jefe-tarjeta strong {
+    color: #fff;
+}
+
+.jefe-img {
+    display: block;
+    width: 100% !important;
+    max-width: 100% !important;
+    height: 180px !important;
+    object-fit: cover; /* Recorta la imagen para que todas midan lo mismo */
+    border: 1px solid #c9ad6a !important;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.8) !important;
+    margin-top: 15px !important;
+    margin-bottom: 0 !important;
+}
+
+/* Estilos para la barra de navegación superior */
+.Menu-Superior {
+    background-color: rgba(15, 15, 15, 0.9);
+    border: 1px solid #c9ad6a;
+    margin-bottom: 25px;
+}
+
+.Menu-Superior ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.Menu-Superior li {
+    flex-grow: 1;
+    text-align: center;
+}
+
+.Menu-Superior a {
+    display: block;
+    padding: 15px 10px;
+    color: #a6a6a6;
+    font-family: 'Cinzel', serif;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.Menu-Superior a:hover {
+    color: #fff;
+    background-color: rgba(201, 173, 106, 0.15);
+    text-shadow: 0 0 8px #c9ad6a;
+    box-shadow: inset 0 -3px 0 #c9ad6a;
+}

@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <title>Elden Ring - Guía del Sinluz</title>
+    
+    <link rel="stylesheet" href="css/flexboxgrid.min.css">
+    <link rel="stylesheet" href="css/style_index.css">
+ 
+    <script type="text/javascript">
+        function muestra(capa) {
+            // Buscamos todos los elementos con la clase "articulo"
+            var capas = document.getElementsByClassName("articulo");
+            for(var i=0; i<capas.length; i++) {
+                capas[i].classList.remove("visible");
+                capas[i].classList.add("oculto");
+            }
+            // Mostramos el elemento seleccionado y le añadimos la animación
+            var elemento = document.getElementById(capa);
+            elemento.classList.remove("oculto");
+            elemento.classList.add("visible");
+        }    
+    </script>
+</head>
+<body>
+    <div class="container">
+        <header class="row">
+            <div class="col-xs-12">
+                <div class="logo">
+                    <h1>ELDEN RING</h1>
+                </div>
+                <h4>Levántate, Sinluz, y que la gracia te guíe</h4>
+            </div>
+        </header>
+   
+        <section class="row">
+            <div class="col-xs-12 col-sm-9 last-xs first-sm">
+                <article>
+                    
+                    <div id="inicio" class="articulo visible">
+                        <h1>Tierras Intermedias</h1>
+                        <p class="text-center">Bienvenido a la guía interactiva. Selecciona un fragmento del Círculo para comenzar a explorar su contenido.</p>
+                        <div class="row center-xs Galeria-Seleccion">
+                            <div class="col-xs-12 col-sm-4 Caja-Icono">
+                                <img src="imagenes/lore.jpg" class="menu-img" onclick="muestra('historia')" alt="Lore">
+                                <p>Historia y Lore</p>
+                            </div>
+                            <div class="col-xs-12 col-sm-4 Caja-Icono">
+                                <img src="imagenes/jefes.jpg" class="menu-img" onclick="muestra('bosses')" alt="Jefes">
+                                <p>Grandes Jefes</p>
+                            </div>
+                            <div class="col-xs-12 col-sm-4 Caja-Icono">
+                                <img src="imagenes/clases.webp" class="menu-img" onclick="muestra('clases')" alt="Clases">
+                                <p>Clases y Atributos</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="historia" class="articulo oculto">
+                        <h1>El Lore de las Tierras Intermedias</h1>
+    
+                        <p>La historia de Elden Ring, escrita por <strong>George R.R. Martin</strong> y <strong>Hidetaka Miyazaki</strong>, narra el ascenso y la caída de un orden divino en un mundo fragmentado.</p>
+
+                        <h2>1. La Era Primordial y la Gran Voluntad</h2>
+                        <p>Mucho antes del Árbol Áureo, existía el <em>Crisol de la Vida</em>, donde toda la existencia estaba unida. Sin embargo, una entidad cósmica conocida como la <strong>Gran Voluntad</strong> envió una estrella a las Tierras Intermedias que contenía a la Bestia de Elden, la cual se convertiría en el <strong>Círculo de Elden</strong>.</p>
+
+                        <h2>2. El Reinado de Marika y el Orden Dorado</h2>
+                        <p>La Reina Marika la Eterna fue elegida como vasalla de la Gran Voluntad. Ella creó el <strong>Orden Dorado</strong> al extraer la Runa de la Muerte del Círculo de Elden, eliminando la muerte natural del mundo.</p>
+    
+                        <table style="width:100%; border-collapse: collapse; margin: 20px 0; background: rgba(0,0,0,0.3); border: 1px solid #c9ad6a;">
+                            <tr style="border-bottom: 1px solid #c9ad6a;">
+                                <th style="padding: 10px; text-align: left;">Personaje</th>
+                                <th style="padding: 10px; text-align: left;">Rol en la Historia</th>
+                            </tr>
+                            <tr>
+                                <td style="padding: 10px; border-bottom: 1px solid #444;">Marika la Eterna</td>
+                                <td style="padding: 10px; border-bottom: 1px solid #444;">Reina Diosa y vasalla de la Gran Voluntad.</td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 10px; border-bottom: 1px solid #444;">Godfrey</td>
+                                <td style="padding: 10px; border-bottom: 1px solid #444;">Primer Señor de Elden y líder de los Sinluz.</td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 10px; border-bottom: 1px solid #444;">Radagon</td>
+                                <td style="padding: 10px; border-bottom: 1px solid #444;">El segundo Señor de Elden (cuya identidad es un gran misterio).</td>
+                                </tr>
+                        </table>
+
+                        <h2>3. La Noche de los Puñales Negros y La Devastación</h2>
+                        <p>La paz se rompió cuando la <strong>Runa de la Muerte</strong> fue robada. Godwyn el Dorado fue asesinado, siendo el primer semidiós en morir. Esto llevó a Marika a romper el Círculo de Elden en un acto de desesperación o rebelión.</p>
+    
+                        <ul>
+                            <li><strong>Los Fragmentos:</strong> Los hijos de Marika (semidioses) reclamaron las Grandes Runas.</li>
+                            <li><strong>La Guerra:</strong> Se desató una guerra total conocida como <em>La Devastación</em>, donde nadie salió victorioso.</li>
+                            <li><strong>El Abandono:</strong> La Gran Voluntad abandonó a los semidioses debido a su ambición ciega.</li>
+                        </ul>
+
+                        <h2>4. El Regreso de los Sinluz</h2>
+                        <p>Ahora, la Gracia perdida vuelve a guiar a los <strong>Sinluz</strong> (como tú), que fueron exiliados hace eones. Tu misión es cruzar el Mar de Niebla, derrotar a los semidioses, reclamar las runas y convertirte en el nuevo <strong>Señor de Elden</strong>.</p>
+
+                        <img src="imagenes/arbol_aureo.png" alt="El Árbol Áureo en el horizonte" style="width: 100%; border-radius: 5px;">
+
+                        <div class="center-xs">
+                            <button class="btn-volver" onclick="muestra('inicio')">⬅ Volver al Mapa de Inicio</button>
+                        </div>
+                    </div>
+
+                    <div id="bosses" class="articulo oculto">
+                        <h1>Portadores de Esquirlas y Jefes Legendarios</h1>
+                        <p>Las Tierras Entre Medias están custodiadas por los semidioses y reyes caídos, quienes reclaman los fragmentos del Círculo de Elden. Deberás derrotarlos para reclamar las Grandes Runas y reparar el Círculo.</p>
+    
+                        <div class="row">
+        
+                            <div class="col-xs-12 col-sm-6 jefe-caja">
+                                <div class="jefe-tarjeta">
+                                    <h2>Margit, el Augurio Caído</h2>
+                                    <p><strong>Ubicación:</strong> Castillo de Velo Tormentoso</p>
+                                    <p>El primer gran muro para cualquier Sinluz. Armado con un bastón gigante y dagas de luz dorada, es la identidad falsa que usa Morgott para cazar a los campeones antes de que se acerquen a la capital.</p>
+                                    <img src="imagenes/margit.jpg" alt="Margit, el Augurio Caído" class="jefe-img">
+                                </div>
+                            </div>
+
+                            <div class="col-xs-12 col-sm-6 jefe-caja">
+                                <div class="jefe-tarjeta">
+                                    <h2>Godrick, el Injertado</h2>
+                                    <p><strong>Ubicación:</strong> Castillo de Velo Tormentoso</p>
+                                    <p>Señor de Necrolimbo. Debido a su debilidad hereditaria, recurrió a la macabra técnica del "injerto", mutilando a incontables guerreros para implantarse sus extremidades. En combate, mutila su propio brazo para usar la cabeza de un dragón escupefuegos.</p>
+                                    <img src="imagenes/godrick.webp" alt="Godrick, el Injertado" class="jefe-img">
+                                </div>
+                            </div>
+
+                            <div class="col-xs-12 col-sm-6 jefe-caja">
+                                <div class="jefe-tarjeta">
+                                    <h2>Reina Rennala de la Luna Llena</h2>
+                                    <p><strong>Ubicación:</strong> Academia de Raya Lucaria</p>
+                                    <p>Líder de la casa de Caria y maestra de la magia de reencarnación. Aunque está sumida en el dolor por el abandono de Radagon, protege con recelo la Gran Runa del Nacimiento Inonato dentro de un huevo de ámbar.</p>
+                                    <img src="imagenes/rennala.webp" alt="Reina Rennala" class="jefe-img">
+                                </div>
+                            </div>
+
+                            <div class="col-xs-12 col-sm-6 jefe-caja">
+                                <div class="jefe-tarjeta">
+                                    <h2>General Radahn, Azote de las Estrellas</h2>
+                                    <p><strong>Ubicación:</strong> Castillo de la Melena Roja (Caelid)</p>
+                                    <p>El semidiós más poderoso en fuerza física, capaz de dominar la gravedad para detener el curso de los astros. Tras su batalla contra Malenia, fue consumido por la Putrefacción Roja y ahora deambula como una bestia salvaje que devora cadáveres.</p>
+                                    <img src="imagenes/radahn.jpeg" alt="General Radahn" class="jefe-img">
+                                </div>
+                            </div>
+
+                            <div class="col-xs-12 col-sm-6 jefe-caja">
+                                <div class="jefe-tarjeta">
+                                    <h2>Rykard, Señor de la Blasfemia</h2>
+                                    <p><strong>Ubicación:</strong> Mansión del Volcán</p>
+                                    <p>Un semidiós rebelde que decidió devorar y ser devorado por la Gran Serpiente devoradora de Dioses para alcanzar la inmortalidad. Su objetivo es derrocar a la Gran Voluntad y fusionar a todos los campeones dentro de su propio ser carnoso.</p>
+                                    <img src="imagenes/rykard.webp" alt="Señor Rykard" class="jefe-img">
+                                </div>
+                            </div>
+
+                            <div class="col-xs-12 col-sm-6 jefe-caja">
+                                <div class="jefe-tarjeta">
+                                <h2>Morgott, el Rey de los Augurios</h2>
+                                   <p><strong>Ubicación:</strong> Leyndell, Capital Real</p>
+                                    <p>A pesar de haber nacido con la maldición de los Augurios y ser encerrado en las cloacas, es el único hijo que se mantuvo fiel al Árbol Áureo durante la Devastación, defendiendo el trono vacío de la capital frente a cualquier usurpador.</p>
+                                    <img src="imagenes/morgott.jpg" alt="Rey Morgott" class="jefe-img">
+                                </div>
+                            </div>
+
+                            <div class="col-xs-12 col-sm-6 jefe-caja">
+                                <div class="jefe-tarjeta">
+                                    <h2>Malenia, la Espada de Miquella</h2>
+                                    <p><strong>Ubicación:</strong> El Árbol Hierático de Miquella</p>
+                                    <p>La guerrera invicta de las Tierras Entre Medias. Porta una prótesis de oro puro en su brazo y combate usando una agilidad sobrehumana. Cuando se ve acorralada, desata el poder de la Diosa de la Putrefacción Roja.</p>
+                                    <img src="imagenes/malenia.webp" alt="Malenia, la Espada de Miquella" class="jefe-img">
+                                </div>
+                            </div>
+
+                            <div class="col-xs-12 col-sm-6 jefe-caja">
+                                <div class="jefe-tarjeta">
+                                    <h2>Maliketh, la Hoja Negra</h2>
+                                    <p><strong>Ubicación:</strong> Farum Azula, la Ciudad En Ruinas</p>
+                                    <p>La sombra fiel de la Reina Marika. Custodia la Runa de la Muerte Sellada dentro de su propia carne para que nadie pueda volver a robar el destino de la muerte mortal. Su espada infunde un terror absoluto incluso en los semidioses.</p>
+                                    <img src="imagenes/maliketh.jpg" alt="Maliketh, la Hoja Negra" class="jefe-img">
+                                </div>
+                            </div>
+
+                            <div class="col-xs-12 jefe-caja">
+                                <div class="jefe-tarjeta jefe-final">
+                                    <h2>Radagon de la Orden Dorada & La Bestia de Elden</h2>
+                                    <p><strong>Ubicación:</strong> El Interior del Árbol Áureo (Combate Final)</p>
+                                    <p>El desafío definitivo para enmendar el Círculo. <strong>Radagon</strong>, el campeón de cabello pelirrojo y la otra mitad de la Reina Marika, defiende los restos del orden fracturado empuñando el mismísimo martillo rúnico. Al ser derrotado, de su cuerpo surge la <strong>Bestia de Elden</strong>, una entidad divina enviada por la Gran Voluntad que toma la forma de una majestuosa criatura cósmica acuática, personificando el concepto mismo del Círculo de Elden.</p>
+                                    <div class="row">
+                                        <div class="col-xs-12 col-sm-6">
+                                            <img src="imagenes/radagon.webp" alt="Radagon de la Orden Dorada" class="jefe-img">
+                                        </div>
+                                        <div class="col-xs-12 col-sm-6">
+                                            <img src="imagenes/bestia.jpg" alt="La Bestia de Elden" class="jefe-img">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="center-xs">
+                            <button class="btn-volver" onclick="muestra('inicio')">⬅ Volver al Inicio</button>
+                        </div>
+                    </div>
+
+                   <div id="clases" class="articulo oculto">
+                        <h1>Atributos e Identidades de las Clases</h1>
+                        <p>Cada senda determina tu equipamiento inicial y la distribución de tus runas en los primeros niveles. Elige con sabiduría, pues el origen de tu Sinluz marcará tus primeros pasos en las Tierras Intermedias.</p>
+                        
+                        <div class="tabla-contenedor">
+                            <table>
+                               <thead>
+                                  <tr>
+                                     <th>Clase</th>
+                                     <th>Nivel</th>
+                                     <th>Vigor</th>
+                                     <th>Mente</th>
+                                     <th>Aguante</th>
+                                     <th>Fuerza</th>
+                                     <th>Destreza</th>
+                                     <th>Inteligencia</th>
+                                     <th>Fe</th>
+                                  </tr>
+                               </thead>
+                               <tbody>
+                                  <tr>
+                                     <td><strong>Vagante</strong></td>
+                                     <td>9</td>
+                                     <td>15</td>
+                                     <td>10</td>
+                                     <td>11</td>
+                                     <td>14</td>
+                                     <td>13</td>
+                                     <td>9</td>
+                                     <td>9</td>
+                                  </tr>
+                                  <tr>
+                                     <td><strong>Astrólogo</strong></td>
+                                     <td>6</td>
+                                     <td>9</td>
+                                     <td>15</td>
+                                     <td>9</td>
+                                     <td>8</td>
+                                     <td>12</td>
+                                     <td>16</td>
+                                     <td>7</td>
+                                  </tr>
+                                  <tr>
+                                     <td><strong>Héroe</strong></td>
+                                     <td>7</td>
+                                     <td>14</td>
+                                     <td>9</td>
+                                     <td>12</td>
+                                     <td>16</td>
+                                     <td>9</td>
+                                     <td>7</td>
+                                     <td>8</td>
+                                  </tr>
+                                  <tr>
+                                     <td><strong>Samurái</strong></td>
+                                     <td>9</td>
+                                     <td>12</td>
+                                     <td>11</td>
+                                     <td>13</td>
+                                     <td>12</td>
+                                     <td>15</td>
+                                     <td>9</td>
+                                     <td>8</td>
+                                  </tr>
+                                  <tr>
+                                     <td><strong>Confesor</strong></td>
+                                     <td>10</td>
+                                     <td>10</td>
+                                     <td>13</td>
+                                     <td>10</td>
+                                     <td>12</td>
+                                     <td>12</td>
+                                     <td>9</td>
+                                     <td>14</td>
+                                  </tr>
+                                  <tr>
+                                     <td><strong>Miserable</strong></td>
+                                     <td>1</td>
+                                     <td>10</td>
+                                     <td>10</td>
+                                     <td>10</td>
+                                     <td>10</td>
+                                     <td>10</td>
+                                     <td>10</td>
+                                     <td>10</td>
+                                  </tr>
+                               </tbody>
+                            </table>
+                        </div>
+
+                        <h2>Detalles del Equipamiento Inicial</h2>
+                        <p>Si estás pensando en elegir una de las nuevas sendas, esto es lo que llevarás en tu inventario al despertar en la Capilla de la Anticipación:</p>
+                        
+                        <ul>
+                            <li><p><strong>El Samurái:</strong> Un guerrero formidable proveniente de la lejana Tierra de los Juncos. Comienza con la mítica catana <em>Uchigatana</em> (capaz de infligir daño por sangrado pasivo) y un arco largo con flechas de fuego para ataques a distancia. Su armadura es excelente para el inicio del juego.</p></li>
+                            <li><p><strong>El Confesor:</strong> Un heraldo de la iglesia que opera en las sombras, ideal para un estilo de juego híbrido. Comienza equipado con una espada recta, un escudo que bloquea el 100% del daño físico y un catalizador sagrado para lanzar encantamientos de curación inmediata y sigilo.</p></li>
+                            <li><p><strong>El Miserable:</strong> Un lienzo en blanco. Un Sinluz despojado de todo orgullo que viene al mundo tal como nació: en paños menores y armado únicamente con un tosco <em>Garrote</em> de madera. Es la clase favorita de los veteranos porque su nivel 1 permite moldear los atributos desde cero sin desperdiciar runas.</p></li>
+                            <li><p><strong>El Vagante:</strong> Un caballero desterrado de su patria que vaga por el mundo cargando con el peso de su pesada armadura. Al comenzar con mucho Vigor y Fuerza, es ideal para guerreros tradicionales que confían en su espada y un escudo robusto.</p></li>
+                            <li><p><strong>El Astrólogo:</strong> Un erudito que lee el destino en las estrellas y domina la magia. Su físico es frágil, pero posee la Inteligencia más alta, lo que le permite lanzar potentes hechizos a larga distancia desde el primer minuto.</p></li>
+                            <li><p><strong>El Héroe:</strong> Un aguerrido descendiente de los jefes de las tierras baldías. Equipado con un hacha de batalla, es una clase nacida para la fuerza bruta y el combate agresivo a corta distancia con armas pesadas.</p></li>
+                        </ul>
+                        
+                        <div class="center-xs">
+                            <button class="btn-volver" onclick="muestra('inicio')">Volver al Inicio</button>
+                        </div>
+                    </div>
+
+                    <div id="galeria" class="articulo oculto">
+                        <h1>Galería de Paisajes</h1>
+                        <p>Postales de los entornos más sobrecogedores y lúgubres de las Tierras Intermedias.</p>
+                        
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-4">
+                                <img src="imagenes/necrolimbo.webp" alt="Necrolimbo" class="galeria-item">
+                                <p class="text-center" style="font-size: 0.9rem; color: #888; margin-top: -5px;">Necrolimbo</p>
+                            </div>
+                            <div class="col-xs-12 col-sm-4">
+                                <img src="imagenes/liurnia.webp" alt="Liurnia" class="galeria-item">
+                                <p class="text-center" style="font-size: 0.9rem; color: #888; margin-top: -5px;">Liurnia</p>
+                            </div>
+                            <div class="col-xs-12 col-sm-4">
+                                <img src="imagenes/caelid.webp" alt="Caelid" class="galeria-item">
+                                <p class="text-center" style="font-size: 0.9rem; color: #888; margin-top: -5px;">Caelid</p>
+                            </div>
+                            <div class="col-xs-12 col-sm-4">
+                                <img src="imagenes/meseta_altus.webp" alt="Meseta de Altus - El reino dorado" class="galeria-item">
+                                <p class="text-center" style="font-size: 0.9rem; color: #888; margin-top: -5px;">Meseta de Altus</p>
+                            </div>
+                            <div class="col-xs-12 col-sm-4">
+                                <img src="imagenes/leyndell.webp" alt="Leyndell - La majestuosa capital real" class="galeria-item">
+                                <p class="text-center" style="font-size: 0.9rem; color: #888; margin-top: -5px;">Capital Real de Leyndell</p>
+                            </div>
+                            <div class="col-xs-12 col-sm-4">
+                                <img src="imagenes/faram azula.jpg" alt="Faram Azula - La ciudad flotante en ruinas" class="galeria-item">
+                                <p class="text-center" style="font-size: 0.9rem; color: #888; margin-top: -5px;">Desmoronada Farum Azula</p>
+                            </div>
+                        </div>
+                        
+                        <div class="center-xs">
+                            <button class="btn-volver" onclick="muestra('inicio')">Volver al Inicio</button>
+                        </div>
+                    </div>
+
+                    <div id="contacto" class="articulo oculto">
+                        <h1>Únete al Pacto del Sinluz</h1>
+                        <p>Envía un mensaje a la Mesa Redonda para registrarte en la búsqueda del Círculo.</p>
+                        
+                        <form action="mailto:unproaso33@gmail.com?subject=Pacto del Sinluz" method="POST" enctype="text/plain" class="formulario-elden">
+                            <div class="form-group">
+                                <label for="nombre">Nombre del Sinluz:</label>
+                                <input type="text" id="nombre" name="nombre" placeholder="Ej. Tarnished" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="correo">Correo de la Gracia:</label>
+                                <input type="email" id="correo" name="correo" placeholder="tu-correo@gracia.com" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="mensaje">Tu Mensaje o Petición:</label>
+                                <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tus palabras aquí..." required></textarea>
+                            </div>
+                            <div class="center-xs">
+                                <button type="submit" class="btn-volver">Enviar Ofrenda</button>
+                            </div>
+                        </form>
+                    </div>
+
+                </article>  
+            </div>
+
+            <div class="col-xs-12 col-sm-3">
+                <nav class="Menu-Superior">
+                    <ul>
+                        <li><a href="#" onclick="muestra('inicio')">Inicio</a></li>
+                        <li><a href="#" onclick="muestra('historia')">La Historia</a></li>
+                        <li><a href="#" onclick="muestra('bosses')">Los Jefes</a></li>
+                        <li><a href="#" onclick="muestra('clases')">Clases</a></li>
+                        <li><a href="#" onclick="muestra('galeria')">Galería</a></li>
+                        <li><a href="#" onclick="muestra('contacto')">Unirse al Pacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+
+        <footer class="row">
+            <div class="col-xs-12">
+                <div class="footer">
+                    <p>© 2026 - Guía interactiva para Sinluz</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
