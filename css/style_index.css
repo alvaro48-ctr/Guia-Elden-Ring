@@ -60,6 +60,11 @@ section .articulo h2 {
     border-bottom: 1px solid #c9ad6a;
 }
 
+section .articulo p {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
 /* IMÁGENES: Con marco de "cuadro antiguo" */
 section .articulo img {
     display: block;
